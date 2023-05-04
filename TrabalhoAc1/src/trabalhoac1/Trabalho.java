@@ -8,16 +8,14 @@ public class Trabalho {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
         Random gerador = new Random();
 
         int aleatorio = gerador.nextInt(101);
-
         int palpuser = -1;
         int tentativas;
 
         System.out.println("Bem-vindo ao jogo de adivinhação!");
-        System.out.println("Tente adivinhar o número que estou pensando entre 0 e 100.");
+        System.out.println("Tente adivinhar o número que estou pensando entre 0 e 100.\n");
 
         for (tentativas = 10; palpuser != aleatorio && tentativas > 0; tentativas--) {
 
@@ -27,9 +25,9 @@ public class Trabalho {
 
             if (tentativas > 1) {
                 if (palpuser < aleatorio) {
-                    System.out.println("\nTente um número maior!");
+                    System.out.println("\nTente um número maior!\n");
                 } else if (palpuser > aleatorio) {
-                    System.out.println("\nTente um número menor!");
+                    System.out.println("\nTente um número menor!\n");
                 }
             }
         }
