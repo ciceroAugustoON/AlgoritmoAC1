@@ -13,7 +13,7 @@ public class Trabalho {
 
         int aleatorio = gerador.nextInt(101);
 
-        int palpuser = -1;
+        int palpuser;
         int tentativas;
 
         System.out.println("Bem-vindo ao jogo de adivinhação!");
